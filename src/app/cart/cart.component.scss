@@ -1,0 +1,28 @@
+.cart-container {
+  border: 2px solid #ccc;
+  padding: 15px;
+  text-align: center;
+
+  & .cart-content {
+    display: grid;
+    grid-gap: 10px;
+
+    & div.cartProductInfo {
+      border: 1px solid #ccc;
+      padding: 10px;
+      display: grid;
+
+      & .cart-remove-button {
+        background-color: #ffc107; /* Green */
+        border: none;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cart-remove-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+<div class="cart-container" *ngIf="productsAddedToCart.length > 0; else noProducts">
+
+  <div class="heading">
+    <h3>Shopping cart</h3>
+  </div>
+
+  <div class="cart-content">
+    <div *ngFor="let productAddedToCart of productsAddedToCart" class="cartProductInfo">
+
+      <h4>{{productAddedToCart?.productName}}</h4>
+      <h3><span>$</span>{{productAddedToCart?.price}}</h3>
+
+      <button class="btn cart-remove-button" (click)="removeFromCart(productAddedToCart)">Remove</button>
+
+    </div>
+  </div>
+</div>
+
+<ng-template #noProducts>
+  <div class="cart-container">
+    Shopping cart is empty
+  </div>
+</ng-template>
