@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
 import { Product } from '../model/product.model';
+// import productsJSON from './products.json';
 
 @Injectable({
   providedIn: 'root'
