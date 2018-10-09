@@ -13,7 +13,7 @@ export class ProductService {
   constructor(private http: HttpClient) {}
 
   fetchProducts() {
-    return this.http.get('../assets/products.json');
+    return this.http.get('assets/products.json');
   }
 
   // getProductCartListener() {
