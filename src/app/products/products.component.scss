@@ -7,9 +7,9 @@
     border: 2px solid #ccc;
     padding: 10px;
     border-radius: 10px;
-    grid-gap: 15px;
+    grid-gap: 5px;
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 300px 1fr;
     text-align: center;
 
     & img {
